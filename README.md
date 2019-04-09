@@ -1,3 +1,12 @@
+Fork with MemBuffer overrun fix
+
+Occasionally this library will crash the process with an uncatchable error. This
+fork fixes the error. Remove the fork when
+https://github.com/evernote/evernote-sdk-js/issues/71 has a fix merged.
+
+Note the Evernote upstream ignores the "lib" directory but pushes it to NPM on
+publish. We're installing from git so check in the "lib" directory.
+
 Evernote SDK for JavaScript
 ===========================
 Evernote API version 2.0.5
